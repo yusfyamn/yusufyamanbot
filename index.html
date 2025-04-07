@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yusuf Yaman - Dijital Satış Asistanı</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://via.placeholder.com/32" type="image/png">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sol Menü -->
+        <div class="sidebar">
+            <div class="logo">
+                <img src="https://via.placeholder.com/40" alt="Logo">
+                <h1>Dijital Satış Asistanı</h1>
+            </div>
+            <button class="new-chat-btn">
+                <span>+ Yeni Sohbet</span>
+            </button>
+            <div class="history">
+                <div class="history-item active">
+                    <span>Instagram Keşfet Rehberi</span>
+                </div>
+                <div class="history-item">
+                    <span>Dijital Ürün Fikirleri</span>
+                </div>
+                <div class="history-item">
+                    <span>TikTok İçerik Stratejisi</span>
+                </div>
+            </div>
+            <div class="user-info">
+                <img src="https://via.placeholder.com/30" alt="User">
+                <span>Yusuf Yaman</span>
+            </div>
+        </div>
+
+        <!-- Ana İçerik -->
+        <div class="main-content">
+            <!-- Sohbet Başlığı -->
+            <div class="chat-header">
+                <h2>Dijital Satış Asistanı</h2>
+            </div>
+
+            <!-- Sohbet Alanı -->
+            <div class="chat-container" id="chatContainer">
+                <!-- Bot Karşılama Mesajı -->
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>Merhaba, ben Yusuf Yaman'ın Dijital Satış Asistanıyım! Size nasıl yardımcı olabilirim?</p>
+                        <p>Aşağıdaki konularda sorularınızı yanıtlayabilirim:</p>
+                        <ul>
+                            <li>Instagram ve TikTok'ta organik büyüme</li>
+                            <li>Algoritma optimizasyonu ve keşfete çıkma</li>
+                            <li>Dijital ürün oluşturma ve satış teknikleri</li>
+                            <li>İçerik üretimi ve niş seçimi</li>
+                            <li>Yapay zeka araçlarıyla içerik oluşturma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mesaj Gönderme Alanı -->
+            <div class="input-container">
+                <textarea id="userInput" placeholder="Mesajınızı buraya yazın..." rows="1"></textarea>
+                <button id="sendButton">Gönder</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
