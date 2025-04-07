@@ -4,34 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yusuf Yaman - Dijital Satış Asistanı</title>
+    <meta name="description" content="Yusuf Yaman'ın Dijital Satış ve Organik Büyüme Asistanı - Instagram, TikTok ve dijital ürün satışı konularında yardımcı olur.">
+    <meta name="keywords" content="dijital satış, organik büyüme, instagram, tiktok, algoritma, keşfet, yusuf yaman">
+    
+    <!-- Sosyal Medya Paylaşım Meta Etiketleri -->
+    <meta property="og:title" content="Yusuf Yaman - Dijital Satış Asistanı">
+    <meta property="og:description" content="Instagram, TikTok ve dijital ürün satışı konularında size yardımcı olacak yapay zeka asistanı">
+    <meta property="og:image" content="https://raw.githubusercontent.com/huzaifi0604/Favicon/main/favicon.png">
+    <meta property="og:url" content="https://kullaniciadi.github.io/repo-adi/">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://raw.githubusercontent.com/huzaifi0604/Favicon/main/favicon.png" type="image/png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://via.placeholder.com/32" type="image/png">
+    
+    <!-- Font Awesome - Ücretsiz İkonlar için -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="app-container">
         <!-- Sol Menü -->
         <div class="sidebar">
             <div class="logo">
-                <img src="https://via.placeholder.com/40" alt="Logo">
+                <img src="https://raw.githubusercontent.com/huzaifi0604/Favicon/main/favicon.png" alt="Logo">
                 <h1>Dijital Satış Asistanı</h1>
             </div>
+            
             <button class="new-chat-btn">
-                <span>+ Yeni Sohbet</span>
+                <i class="fas fa-plus"></i> Yeni Sohbet
             </button>
+            
+            <div class="theme-switch-container">
+                <span class="theme-text">Karanlık Mod</span>
+                <label class="theme-switch">
+                    <input type="checkbox" id="themeSwitch">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            
             <div class="history">
                 <div class="history-item active">
+                    <i class="fas fa-comment"></i>
                     <span>Instagram Keşfet Rehberi</span>
                 </div>
                 <div class="history-item">
+                    <i class="fas fa-comment"></i>
                     <span>Dijital Ürün Fikirleri</span>
                 </div>
                 <div class="history-item">
+                    <i class="fas fa-comment"></i>
                     <span>TikTok İçerik Stratejisi</span>
                 </div>
+                <div class="history-item">
+                    <i class="fas fa-comment"></i>
+                    <span>ChatGPT Prompt Rehberi</span>
+                </div>
             </div>
+            
             <div class="user-info">
-                <img src="https://via.placeholder.com/30" alt="User">
+                <img src="https://raw.githubusercontent.com/huzaifi0604/Favicon/main/favicon.png" alt="User">
                 <span>Yusuf Yaman</span>
             </div>
         </div>
@@ -41,12 +77,18 @@
             <!-- Sohbet Başlığı -->
             <div class="chat-header">
                 <h2>Dijital Satış Asistanı</h2>
+                <button id="clearChatBtn" title="Sohbeti Temizle">
+                    <i class="fas fa-trash"></i>
+                </button>
             </div>
 
             <!-- Sohbet Alanı -->
             <div class="chat-container" id="chatContainer">
                 <!-- Bot Karşılama Mesajı -->
                 <div class="message bot-message">
+                    <div class="avatar">
+                        <img src="https://raw.githubusercontent.com/huzaifi0604/Favicon/main/favicon.png" alt="Bot Avatar">
+                    </div>
                     <div class="message-content">
                         <p>Merhaba, ben Yusuf Yaman'ın Dijital Satış Asistanıyım! Size nasıl yardımcı olabilirim?</p>
                         <p>Aşağıdaki konularda sorularınızı yanıtlayabilirim:</p>
@@ -64,7 +106,9 @@
             <!-- Mesaj Gönderme Alanı -->
             <div class="input-container">
                 <textarea id="userInput" placeholder="Mesajınızı buraya yazın..." rows="1"></textarea>
-                <button id="sendButton">Gönder</button>
+                <button id="sendButton">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
             </div>
         </div>
     </div>
