@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         try {
             // Google Gemini API key - bu anahtarı güvenli bir şekilde saklamak önemlidir
-            const API_KEY = 'AIzaSyACGPu6-JhefKb83HcDQ6h1zUdcLI_MgN4'; // Sizin API anahtarınız
+            const API_KEY = 'AIzaSyAhdRR0uKZvCGGV90NIfgu0TIUdsqFWKt4'; // Sizin API anahtarınız
             
             // Sistem talimatlarını ve kullanıcı mesajını birleştir
             const systemPrompt = `
